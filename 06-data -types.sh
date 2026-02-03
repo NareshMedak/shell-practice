@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER1=Naresh
+NUMBER1=100
 NUMBER2=200
 
 TIMESTAMP=$(date)
