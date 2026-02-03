@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1="Modi" #there should be no spaces before and after =
-PERSON2="Musk"
+PERSON1=$1
+PERSON2=$2
 
 
 echo "$PERSON1 :: Hello,$PERSON2 how are you?" 
