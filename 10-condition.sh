@@ -1,12 +1,9 @@
 #!bin/bash/
 
-$=ROOTUSER
+read -p "Enter username: " user
 
-if [ $EUID -ne 0]
-then 
-    echo "Please run as root user"
-
-    else 
-    echo "Normal user: $USER"
-    fi 
-
+if [ "$user" == "root" ]; then
+  echo "Admin user"
+else
+  echo "Normal user"
+fi
