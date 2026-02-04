@@ -15,9 +15,9 @@ else
      VALIDATE(){
    if [ $1 -eq 0 ]
    then  
-    echo "$2 installing is SUCESS"
+    echo "Installing $2 is SUCESS"
  else 
-    echo "$2 installation is FAILED"
+    echo "Installing $2 is FAILED"
     exit 1 
   fi
 
@@ -39,7 +39,7 @@ else
   dnf list installed phython3
     if [ $? -ne 0 ]
  then  
-    echo "phython3 is not installed.. going to install it"
+    echo "phython3 is not installed going to install it"
     dnf install python3 -y 
     VALIDATE $? "python3"
  else 
@@ -50,7 +50,7 @@ else
   dnf list installed nginx
     if [ $? -ne 0 ]
  then  
-    echo "nginx is not installed.. going to install it"
+    echo "nginx is not installed going to install it"
     dnf install nginx -y 
     VALIDATE $? "nginx"
  else 
