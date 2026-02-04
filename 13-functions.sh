@@ -9,7 +9,7 @@ then
 else 
     echo "you are running this with root access"
     
- f
+ fi
  
  #validate functions takes inout as exit status, what command they tried to install 
      VALIDATE(){
