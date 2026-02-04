@@ -8,11 +8,10 @@ NUMBER=$1
 #-ne --> not equal to
 
 
-if [ $NUMBER -gt 10 ]
+if [ $NUMBER -lt 50 ]
 then 
-    echo "Given number $NUMBER is greater than 10"
+    echo "Given number $NUMBER is greater than 50"
 else 
-   echo "Given number $NUMBER is less than or equal
- to 10"
+   echo "Given number $NUMBER is less than 50"
 
     fi 
