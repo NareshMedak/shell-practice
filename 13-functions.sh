@@ -9,21 +9,24 @@ then
 else 
     echo "you are running this with root access"
     
- fi
-     VALIDATE() {
-   if [ $1 -ne 0 ]
- then  
-    echo "$2 installation is FAILED"
-    exit 1
+ f
+ 
+ #validate functions takes inout as exit status, what command they tried to install 
+     VALIDATE(){
+   if [ $1 -eq 0 ]
+   then  
+    echo "$2 installing is SUCESS"
  else 
-    echo "$2 installation is SUCCESS"
- fi
-    }
+    echo "$2 installation is FAILED"
+    exit 1 
+  fi
+
+ }
 
     dnf list installed mysql 
     if [ $? -ne 0 ]
  then  
-    echo "Mysql is not installed.. going to install mysql"
+    echo "Mysql is not installed.. going to install it"
     dnf install mysql -y 
     VALIDATE $? "mysql"
 
@@ -36,7 +39,7 @@ else
   dnf list installed phython3
     if [ $? -ne 0 ]
  then  
-    echo "phython3 is not installed.. going to install phython3"
+    echo "phython3 is not installed.. going to install it"
     dnf install python3 -y 
     VALIDATE $? "python3"
  else 
@@ -47,7 +50,7 @@ else
   dnf list installed nginx
     if [ $? -ne 0 ]
  then  
-    echo "nginx is not installed.. going to install nginx"
+    echo "nginx is not installed.. going to install it"
     dnf install nginx -y 
     VALIDATE $? "nginx"
  else 
