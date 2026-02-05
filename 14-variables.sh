@@ -1,10 +1,9 @@
 #!/bin/bash
+ 
+ echo "Enter your PIN number::"
 
-echo "Enter your PIN number:"
-read -s PIN
-echo
-# create a masked version of the PIN (same length, asterisks)
-masked=$(printf '%*s' "${#PIN}" '' | tr ' ' '*')
-echo "Your number is: $masked"
+ read -s PIN  #there is PIN variable 
+
+ echo "Your number is: $PIN"
 
  
