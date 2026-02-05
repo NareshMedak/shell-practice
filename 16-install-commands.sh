@@ -24,7 +24,7 @@ then
               exit 1
               fi 
                else 
-               Echo "Mysql is already installed...Nothing do"
+               echo "Mysql is already installed...Nothing do"
 
               fi 
             
