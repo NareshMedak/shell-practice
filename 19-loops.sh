@@ -1,8 +1,7 @@
-#!/bin/bash/
+#!/bin/bash
 
-for in {i...100} 
+for 1 in {i...100} 
 do 
  echo $i 
  done 
 
- 
