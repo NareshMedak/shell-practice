@@ -1,7 +1,6 @@
 #!/bin/bash
 
-for 1 in {i...100} 
+for 1 in {1...100}
 do 
- echo $i 
- done 
-
+   echo $i
+done
