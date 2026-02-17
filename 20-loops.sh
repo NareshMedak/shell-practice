@@ -33,7 +33,6 @@ VALIDATE(){
 }
 for packages in {PACKAGE[@]}
 
-
 dnf list installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
