@@ -31,7 +31,8 @@ VALIDATE(){
         exit 1
     fi
 }
-for packages in {PACKAGE[@]}
+
+for packages in {PACKAGES[@]}
 do
 dnf list installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]
